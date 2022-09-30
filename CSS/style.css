@@ -17,10 +17,11 @@ nav .logo {
   overflow: hidden;
 }
 
-nav .logo img {
+nav .logo .logo_img {
   width: 200px;
   height: 75px;
   transform: scale(0.8);
+  filter: grayscale(0%) brightness(115%);
 }
 
 nav ul {
@@ -41,7 +42,15 @@ nav ul li a {
   text-decoration: none;
   color: aliceblue;
   font-weight: bold;
+  filter: grayscale(0%) brightness(115%);
 }
+nav ul li a:hover{
+  filter: grayscale(100%) brightness(75%);
+}
+nav .logo_img:hover{
+  filter: grayscale(100%) brightness(75%);
+}
+
 /* NAVBAR END */
 
 /* to adjust homesection nav space */
